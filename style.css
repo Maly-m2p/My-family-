@@ -1,0 +1,3883 @@
+/* =========================================================
+   MUDUMBI FAMILY WEBSITE
+   GLOBAL STYLES
+========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONT IMPORTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+
+    /* COLORS */
+    --cream: #f8f3ed;
+    --ivory: #fffdf9;
+    --soft-beige: #eee4d8;
+
+    --brown: #4a3329;
+    --dark-brown: #2d211c;
+    --soft-brown: #795f52;
+
+    --rose: #b98586;
+    --soft-rose: #d9b7b5;
+
+    --gold: #b79a67;
+    --light-gold: #d8c39a;
+
+    --white: #ffffff;
+
+    /* TYPOGRAPHY */
+    --heading-font: "Cormorant Garamond", serif;
+    --body-font: "Montserrat", sans-serif;
+    --decorative-font: "Great Vibes", cursive;
+
+    /* SPACING */
+    --section-padding: 110px 8%;
+
+    /* EFFECTS */
+    --radius-small: 8px;
+    --radius-medium: 18px;
+    --radius-large: 30px;
+
+    --shadow-soft:
+        0 15px 40px rgba(74, 51, 41, 0.08);
+
+    --transition:
+        all 0.4s ease;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--body-font);
+
+    background: var(--cream);
+
+    color: var(--brown);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section {
+
+    position: relative;
+
+    padding: var(--section-padding);
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+
+    font-family: var(--body-font);
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: var(--gold);
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================================
+   GENERAL HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: var(--heading-font);
+
+    color: var(--dark-brown);
+
+    line-height: 1.1;
+
+}
+
+
+h2 {
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    font-weight: 500;
+
+}
+
+
+h2 span {
+
+    color: var(--rose);
+
+    font-style: italic;
+
+}
+
+
+h3 {
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+
+    font-weight: 500;
+
+}
+
+
+p {
+
+    font-size: 0.95rem;
+
+}
+
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
+
+::selection {
+
+    background: var(--soft-rose);
+
+    color: var(--dark-brown);
+
+}
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: var(--cream);
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--soft-rose);
+
+    border-radius: 20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--rose);
+
+}
+
+
+/* =========================================================
+   GLOBAL IMAGE HOVER
+========================================================= */
+
+img {
+
+    transition: transform 0.7s ease;
+
+}
+
+
+figure {
+
+    overflow: hidden;
+
+}
+
+
+figure:hover img {
+
+    transform: scale(1.04);
+
+}
+/* =========================================================
+   HERO / ACCUEIL
+========================================================= */
+
+/* =========================================================
+   ELEGANT FAMILY INTRO — ACCUEIL
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 8%;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(185, 133, 134, 0.20),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #2d211c 0%,
+            #4a3329 55%,
+            #60483b 100%
+        );
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.hero .navbar {
+
+    color: var(--brown);
+
+}
+
+
+.hero .logo {
+    color: var(--light-gold);
+}
+
+.hero .nav-links a {
+    color: var(--light-gold);
+    transition: var(--transition);
+}
+
+
+.hero .nav-links a:hover {
+
+    color: var(--rose);
+
+}
+
+.hero .nav-links a::after {
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    max-width: 1100px;
+
+    padding-top: 50px;
+
+}
+
+
+.hero-content .hero-small-title {
+
+    color: var(--gold);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.hero h1 {
+
+    max-width: 900px;
+
+    color: var(--dark-brown);
+
+    font-size: clamp(4rem, 9vw, 8.5rem);
+
+    line-height: 0.88;
+
+    letter-spacing: -3px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--rose);
+
+    font-style: italic;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+
+    max-width: 620px;
+
+    margin-top: 35px;
+
+    color: var(--soft-brown);
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-buttons .btn-primary {
+
+    background: var(--brown);
+
+    color: var(--white);
+
+}
+
+
+.hero-buttons .btn-primary:hover {
+
+    background: var(--rose);
+
+    color: var(--white);
+
+}
+
+
+.hero-buttons .btn-secondary {
+
+    border-color: var(--brown);
+
+    color: var(--brown);
+
+    background: transparent;
+
+}
+
+
+.hero-buttons .btn-secondary:hover {
+
+    background: var(--brown);
+
+    color: var(--white);
+
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll-indicator {
+
+    color: var(--soft-brown);
+
+}
+
+
+.scroll-indicator span {
+
+    background: rgba(74, 51, 41, 0.35);
+
+}
+
+
+.scroll-indicator span::after {
+
+    background: var(--brown);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        padding: 0 7%;
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(3.5rem, 14vw, 6rem);
+
+        letter-spacing: -2px;
+
+    }
+
+}
+
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--soft-rose);
+
+    font-style: italic;
+
+    font-weight: 400;
+
+}
+
+
+.hero p {
+
+    max-width: 600px;
+
+    font-size: 1rem;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.hero-buttons .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 190px;
+
+    padding: 15px 28px;
+
+    border: 1px solid transparent;
+
+    border-radius: 50px;
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: var(--transition);
+
+}
+
+
+/* PRIMARY BUTTON */
+
+.hero-buttons .btn-primary {
+
+    background: var(--rose);
+
+    color: var(--white);
+
+}
+
+
+.hero-buttons .btn-primary:hover {
+
+    background: var(--soft-rose);
+
+    color: var(--dark-brown);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* SECONDARY BUTTON */
+
+.hero-buttons .btn-secondary {
+
+    border-color: rgba(255, 255, 255, 0.55);
+
+    color: var(--white);
+
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+.hero-buttons .btn-secondary:hover {
+
+    background: var(--white);
+
+    color: var(--dark-brown);
+
+    border-color: var(--white);
+
+    transform: translateY(-4px);
+
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* SCROLL LINE */
+
+.scroll-indicator span {
+
+    display: block;
+
+    width: 1px;
+
+    height: 45px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.scroll-indicator span::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: var(--white);
+
+    animation: scrollLine 2s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   HERO ANIMATIONS
+========================================================= */
+
+@keyframes heroReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes scrollLine {
+
+    0% {
+
+        top: -100%;
+
+    }
+
+    50% {
+
+        top: 100%;
+
+    }
+
+    100% {
+
+        top: 100%;
+
+    }
+
+}
+/* =========================================================
+   ORIGINE
+========================================================= */
+
+.origine {
+
+    min-height: 85vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 120px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 33, 28, 0.82) 0%,
+            rgba(45, 33, 28, 0.55) 45%,
+            rgba(45, 33, 28, 0.20) 100%
+        ),
+        url("../images/origine/bukavu.jpeg") center / cover no-repeat;
+
+}
+
+
+/* =========================================================
+   ORIGINE CONTENT
+========================================================= */
+
+.origine-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 750px;
+
+    color: var(--white);
+
+}
+
+
+.origine .section-label {
+
+    color: var(--light-gold);
+
+    margin-bottom: 22px;
+
+}
+
+
+.origine h2 {
+
+    color: var(--white);
+
+    font-size: clamp(3.5rem, 7vw, 7rem);
+
+    margin-bottom: 30px;
+
+}
+
+
+.origine h2 span {
+
+    color: var(--soft-rose);
+
+}
+
+
+.origine-description {
+
+    max-width: 650px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 1rem;
+
+    font-weight: 300;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   ORIGINE DECORATIVE LINE
+========================================================= */
+
+.origine-content::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 1px;
+
+    background: var(--light-gold);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================================
+   BUKAVU LABEL
+========================================================= */
+
+.origine-location {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(8px);
+
+    color: var(--white);
+
+    font-size: 0.7rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.origine-location span {
+
+    color: var(--light-gold);
+
+    font-size: 1rem;
+
+}
+
+
+/* =========================================================
+   ORIGINE IMAGE EFFECT
+========================================================= */
+
+.origine::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 55%,
+            rgba(216, 195, 154, 0.08)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   ORIGINE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .origine {
+
+        min-height: 75vh;
+
+        padding: 100px 7%;
+
+        background-position: center;
+
+    }
+
+
+    .origine h2 {
+
+        font-size: clamp(3rem, 14vw, 5rem);
+
+    }
+
+
+    .origine-description {
+
+        font-size: 0.9rem;
+
+        line-height: 1.8;
+
+    }
+
+}
+/* =========================================================
+   IDENTITÉ CULTURELLE
+========================================================= */
+
+.culture {
+
+    position: relative;
+
+    padding: 140px 8%;
+
+    background: var(--ivory);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   CULTURE LAYOUT
+========================================================= */
+
+.culture-container {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 90px;
+
+}
+
+
+/* =========================================================
+   CULTURE IMAGE
+========================================================= */
+
+.culture-image {
+
+    position: relative;
+
+    height: 620px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-medium);
+
+}
+
+
+.culture-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 18px;
+
+    border: 1px solid rgba(216, 195, 154, 0.8);
+
+    border-radius: 12px;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+}
+
+
+.culture-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+
+}
+
+
+.culture-image:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================================
+   CULTURE TEXT
+========================================================= */
+
+.culture-content {
+
+    max-width: 650px;
+
+}
+
+
+.culture-content .section-label {
+
+    margin-bottom: 20px;
+
+}
+
+
+.culture-content h2 {
+
+    margin-bottom: 30px;
+
+}
+
+
+.culture-content h2 span {
+
+    display: block;
+
+}
+
+
+.culture-description {
+
+    color: var(--soft-brown);
+
+    font-size: 0.95rem;
+
+    line-height: 2;
+
+    max-width: 600px;
+
+}
+
+
+/* =========================================================
+   CULTURAL DETAILS
+========================================================= */
+
+.culture-details {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+}
+
+
+.culture-tag {
+
+    padding: 10px 18px;
+
+    border: 1px solid var(--soft-beige);
+
+    border-radius: 50px;
+
+    color: var(--brown);
+
+    background: var(--cream);
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+
+    transition: var(--transition);
+
+}
+
+
+.culture-tag:hover {
+
+    background: var(--brown);
+
+    color: var(--white);
+
+    border-color: var(--brown);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   DECORATIVE MARK
+========================================================= */
+
+.culture-content::after {
+
+    content: "✦";
+
+    display: block;
+
+    margin-top: 45px;
+
+    color: var(--gold);
+
+    font-size: 1.3rem;
+
+}
+
+
+/* =========================================================
+   CULTURE RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .culture-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+    }
+
+
+    .culture-image {
+
+        height: 500px;
+
+        max-width: 650px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .culture {
+
+        padding: 90px 7%;
+
+    }
+
+
+    .culture-image {
+
+        height: 420px;
+
+    }
+
+
+    .culture-image::before {
+
+        inset: 12px;
+
+    }
+
+
+    .culture-details {
+
+        gap: 8px;
+
+    }
+
+}
+/* =========================================================
+   FAMILY SECTION
+========================================================= */
+
+.family {
+
+    position: relative;
+
+    padding: 150px 7%;
+
+    background: var(--cream);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   FAMILY INTRO
+========================================================= */
+
+.family-intro {
+
+    max-width: 900px;
+
+    margin: 0 auto 100px;
+
+    text-align: center;
+
+}
+
+
+.family-intro .section-label {
+
+    margin-bottom: 20px;
+
+}
+
+
+.family-intro h2 {
+
+    margin-bottom: 80px;
+
+}
+
+
+.section-intro {
+
+    max-width: 620px;
+
+    margin: 0 ;
+
+    color: var(--soft-brown);
+
+    font-size: 0.95rem;
+
+    line-height: 2;
+    text-align: left;
+    
+
+}
+
+
+/* =========================================================
+   PARENTS SECTION
+========================================================= */
+
+.parents-section {
+
+    max-width: 1200px;
+
+    margin: 0 auto 150px;
+
+}
+
+
+.parents-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.family-label {
+
+    color: var(--gold);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+}
+
+
+.parents-heading h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.parents-heading h3 span {
+
+    color: var(--rose);
+
+    font-family: sans-serif;
+
+    font-size: 1.4rem;
+
+}
+
+
+.parents-subtitle {
+
+    margin-top: 15px;
+
+    color: var(--soft-brown);
+
+    font-size: 0.85rem;
+
+}
+
+/* =========================================================
+   PARENTS PHOTO BANNER
+========================================================= */
+
+.parents-image {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 24px;
+    isolation: isolate;
+    box-shadow: 0 20px 50px rgba(45, 33, 28, 0.18);
+}
+
+.parents-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.2s cubic-bezier(.2,.7,.2,1), filter 1.2s ease;
+}
+
+/* DARK BROWN CINEMATIC SHADOW */
+.parents-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 33, 28, 0.88) 0%,
+            rgba(45, 33, 28, 0.62) 38%,
+            rgba(45, 33, 28, 0.18) 72%,
+            rgba(45, 33, 28, 0.02) 100%
+        );
+}
+
+/* TEXT ON PHOTO */
+
+.parents-banner-content {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    bottom: 12%;
+    max-width: 520px;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+}
+
+.parents-image.revealed .parents-banner-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MAIN DECORATIVE WORDS */
+
+.parents-banner-content h3 {
+    margin: 0;
+    font-family: var(--decorative-font);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: .85;
+    color: var(--dark-brown);
+}
+
+/* "il y avait eux." */
+
+.parents-banner-content h3 span {
+    display: inline;
+    margin: 0;
+    color: var(--dark-brown);
+    font-family: var(--decorative-font);
+}
+
+/* GOLD LINE */
+
+.parents-banner-line {
+    width: 70px;
+    height: 2px;
+    margin: 22px 0 16px;
+    background: var(--light-gold);
+}
+
+/* DESCRIPTION */
+
+.parents-banner-content p {
+    margin: 0;
+    color: var(--light-gold);
+    font-family: var(--body-font);
+    font-size: .85rem;
+    line-height: 1.7;
+}
+
+/* PHOTO MOVEMENT */
+
+.parents-image:hover img {
+    transform: scale(1.025);
+    filter: brightness(.92);
+}
+
+/* TEXT MOVEMENT */
+
+.parents-image:hover .parents-banner-content {
+    transform: translateY(-4px);
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .parents-image {
+        height: 350px;
+        border-radius: 18px;
+    }
+
+    .parents-banner-content {
+        left: 6%;
+        bottom: 8%;
+        max-width: 85%;
+    }
+
+    .parents-banner-content h3 {
+        font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+    .parents-banner-content p {
+        font-size: .82rem;
+        line-height: 1.5;
+    }
+
+}
+
+
+
+/* =========================================================
+   PARENTS DESCRIPTION
+========================================================= */
+.parents-description {
+    max-width: 760px;
+    margin: 38px auto 55px;
+    text-align: center;
+    position: relative;
+}
+
+.parents-description p {
+    color: var(--soft-brown);
+    font-size: 0.98rem;
+    line-height: 2;
+    margin: 0;
+}
+
+.parents-description::before {
+    content: "“";
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    line-height: .5;
+    color: #d8b477;
+    margin-bottom: 18px;
+}
+
+
+
+
+/* =========================================================
+   PARENTS DETAILS
+========================================================= */
+.parents-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.parent-profile {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 30px;
+    background: rgba(48, 29, 20, 0.92);
+    border: 1px solid rgba(216, 180, 119, 0.28);
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(42, 25, 17, 0.14);
+    transition: transform .45s ease, border-color .45s ease, box-shadow .45s ease;
+}
+
+.parent-profile::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -70px;
+    top: -80px;
+    background: rgba(216, 180, 119, 0.12);
+    border-radius: 50%;
+    transition: transform .6s ease;
+}
+
+.parent-profile:hover {
+    transform: translateY(-8px);
+    border-color: rgba(216, 180, 119, 0.55);
+    box-shadow: 0 25px 55px rgba(42, 25, 17, 0.24);
+}
+
+.parent-profile:hover::before {
+    transform: scale(1.5);
+}
+
+.parent-profile-icon {
+    position: relative;
+    z-index: 1;
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 244, 225, 0.09);
+    border: 1px solid rgba(216, 180, 119, 0.35);
+    font-size: 1.7rem;
+}
+
+.parent-profile-info {
+    position: relative;
+    z-index: 1;
+}
+
+.parent-profile-info h4 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff8ed;
+}
+
+.parent-profile-info > p {
+    color: rgba(255, 238, 215, 0.68);
+    font-size: 0.8rem;
+    margin: 5px 0 14px;
+}
+
+.birthday-button {
+    border: 0;
+    background: transparent;
+    color: #d8b477;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 0;
+    cursor: pointer;
+    transition: color .3s ease, transform .3s ease;
+}
+
+.birthday-button:hover {
+    color: #fff1d2;
+    transform: translateX(4px);
+}
+
+/* =========================================================
+   CHILDREN SECTION
+========================================================= */
+
+.children-section {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+.children-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+
+.children-heading h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.children-heading h3 span {
+
+    color: var(--rose);
+
+    font-style: italic;
+
+}
+
+
+.children-heading > p:last-child {
+
+    color: var(--soft-brown);
+
+    font-size: 0.9rem;
+
+    line-height: 1.9;
+
+}
+
+/* =========================================================
+   CHILDREN GALLERY
+========================================================= */
+
+.children-gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+}
+
+
+/* =========================================================
+   CHILD CARD
+========================================================= */
+
+.child-card {
+
+    background: var(--ivory);
+
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+
+    border: 1px solid rgba(185, 154, 103, 0.15);
+
+    box-shadow: 0 8px 30px rgba(74, 51, 41, 0.04);
+
+    transition: var(--transition);
+
+}
+
+
+.child-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+/* =========================================================
+   CHILD IMAGE
+========================================================= */
+
+.child-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 240px;
+
+    overflow: hidden;
+
+}
+
+
+.child-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center top;
+
+    transition: transform 0.6s ease;
+    
+
+}
+
+
+.child-card:hover .child-image img {
+
+    transform: scale(1.03);
+
+}
+
+
+/* NO NUMBER CIRCLES */
+
+.birth-order {
+
+    display: none !important;
+
+}
+
+
+
+
+/* =========================================================
+   CHILD CONTENT
+========================================================= */
+
+.child-content {
+
+    padding: 32px;
+
+}
+
+
+.child-position {
+
+    color: var(--gold);
+
+    font-size: 0.65rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+
+}
+
+
+.child-content h4 {
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.child-info {
+
+    color: var(--rose);
+
+    font-size: 0.78rem;
+
+    font-weight: 500;
+
+    margin-bottom: 18px;
+
+}
+
+
+.child-description {
+
+    color: var(--soft-brown);
+
+    font-size: 0.85rem;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   CHILD ACTIONS
+========================================================= */
+
+.child-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+
+}
+
+
+.child-actions .birthday-button {
+
+    padding: 9px 15px;
+
+    border: 1px solid var(--soft-beige);
+
+    border-radius: 50px;
+
+}
+
+
+.profile-button {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--brown);
+
+    font-family: var(--body-font);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+
+.profile-button:hover {
+
+    color: var(--rose);
+
+    transform: translateX(4px);
+
+}
+
+
+/* =========================================================
+   FAMILY RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .family {
+
+        padding: 110px 7%;
+
+    }
+
+
+    .parents-details {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .children-gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .parents-image {
+
+        height: 480px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .family {
+
+        padding: 90px 6%;
+
+    }
+
+
+    .family-intro {
+
+        margin-bottom: 70px;
+
+    }
+
+
+    .parents-section {
+
+        margin-bottom: 100px;
+
+    }
+
+
+    .parents-heading h3 {
+
+        gap: 8px;
+
+    }
+
+
+    .parents-image {
+
+        height: 350px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .parents-image::after {
+
+        inset: 12px;
+
+    }
+
+
+    .parent-profile {
+
+        padding: 22px;
+
+    }
+
+
+    .child-image {
+
+        height: 330px;
+
+    }
+
+
+    .child-content {
+
+        padding: 25px;
+
+    }
+
+
+    .child-content h4 {
+
+        font-size: 1.8rem;
+
+    }
+
+}
+/* =========================================================
+   BUKAVU IMAGE — CONTROLLED HEIGHT
+========================================================= */
+
+
+@media (max-width: 600px) {
+
+    .bukavu-image {
+        height: 330px;
+    }
+
+}
+/* =========================================================
+   BUKAVU IMAGE
+========================================================= */
+
+.bukavu-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+.bukavu-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.8s ease;
+
+}
+
+
+.bukavu-image:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =========================================================
+   BUKAVU OVERLAY
+========================================================= */
+
+.bukavu-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(45, 33, 28, 0.15),
+            rgba(45, 33, 28, 0.65)
+        );
+
+}
+
+
+/* SMALL LABEL */
+
+.bukavu-overlay .origin-label {
+
+    color: var(--light-gold);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* MAIN LOCATION */
+
+.bukavu-overlay h3 {
+
+    color: var(--white);
+
+    font-size: clamp(3.5rem, 7vw, 6rem);
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    line-height: 0.9;
+
+    text-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* DESCRIPTION */
+
+.bukavu-overlay p:last-child {
+
+    margin-top: 18px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 0.85rem;
+
+    font-weight: 300;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* DECORATIVE LINE */
+
+.bukavu-overlay::before {
+
+    content: "SUD-KIVU";
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 35px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 4px;
+
+}
+
+/* =========================================================
+   NOTRE IDENTITÉ CULTURELLE — ELEGANT LABEL
+========================================================= */
+
+.bashi-content .origin-label {
+    display: inline-block;
+
+    color: var(--gold) !important;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 22px;
+
+    border-bottom: 1px solid var(--light-gold);
+
+    position: relative;
+}
+
+/* Small elegant ornament */
+
+.bashi-content .origin-label::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: -22px;
+
+    bottom: -7px;
+
+    color: var(--gold);
+
+    font-size: 0.7rem;
+}
+/* DECORATIVE GOLD LINE */
+
+.bukavu-overlay::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 30px;
+
+    width: 60px;
+
+    height: 1px;
+
+    background: var(--light-gold);
+
+}
+/* =========================================================
+   GALERIE
+========================================================= */
+
+.gallery {
+
+    position: relative;
+
+    padding: 150px 7%;
+
+    background: var(--ivory);
+
+    overflow: hidden;
+
+}
+
+/* =========================================================
+   GALLERY INTRO
+========================================================= */
+
+.gallery-intro {
+
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+.gallery-intro h2 {
+
+    margin-bottom: 25px;
+}
+
+.gallery-description {
+
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    color: var(--soft-brown);
+
+    font-size: 0.9rem;
+
+    line-height: 1.9;
+
+}
+
+/* =========================================================
+   GALLERY BUTTON
+========================================================= */
+
+.gallery-action {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 60px;
+
+}
+
+.gallery-more-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 25px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50px;
+
+    background: transparent;
+
+    color: var(--brown);
+
+    font-family: var(--body-font);
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: var(--transition);
+
+}
+
+.gallery-more-button span {
+
+    color: var(--rose);
+
+    font-size: 1rem;
+
+    transition: var(--transition);
+
+}
+
+.gallery-more-button:hover {
+
+    background: var(--brown);
+
+    color: var(--white);
+
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+
+}
+
+.gallery-more-button:hover span {
+
+    color: var(--light-gold);
+
+    transform: translateX(5px);
+
+}
+
+/* =========================================================
+   GALLERY GRID
+========================================================= */
+
+.gallery-grid {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+/* =========================================================
+   GALLERY ITEM
+========================================================= */
+
+.gallery-item {
+
+    position: relative;
+
+    height: 360px;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-medium);
+
+    background: var(--soft-beige);
+
+    box-shadow: 0 10px 35px rgba(74, 51, 41, 0.08);
+
+}
+
+/* =========================================================
+   GALLERY IMAGE
+========================================================= */
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.06);
+}
+
+/* =========================================================
+   PHOTO CAPTION
+========================================================= */
+
+.gallery-item figcaption {
+
+    position: absolute;
+
+    left: 20px;
+
+    bottom: 18px;
+
+    padding: 8px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 50px;
+
+    background: rgba(45, 33, 28, 0.45);
+
+    backdrop-filter: blur(8px);
+
+    color: var(--white);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+/* =========================================================
+   GALLERY REVEAL
+========================================================= */
+
+.gallery-grid:not([hidden]) {
+
+    animation: galleryReveal 0.8s ease forwards;
+
+}
+
+@keyframes galleryReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================================
+   GALLERY RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        padding: 90px 6%;
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .gallery-item {
+
+        height: 330px;
+    }
+}
+/* =========================================================
+   BASHI CULTURE OVERLAY
+========================================================= */
+
+.bashi-image {
+    position: relative;
+    height: 560px;
+    overflow: hidden;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-soft);
+}
+
+.bashi-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.bashi-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* DARK ELEGANT OVERLAY */
+
+.bashi-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 30px;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(45, 33, 28, 0.10),
+            rgba(45, 33, 28, 0.68)
+        );
+}
+
+
+/* SMALL TITLE */
+
+.bashi-overlay > p {
+    color: var(--light-gold);
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+/* MAIN TITLE */
+
+.bashi-overlay h3 {
+    color: var(--white);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+/* BASHI IN ROSE */
+
+.bashi-overlay h3 span {
+    color: var(--soft-rose);
+    font-style: italic;
+}
+
+
+/* GOLD DECORATIVE LINE */
+
+.bashi-line {
+    width: 65px;
+    height: 1px;
+
+    background: var(--light-gold);
+
+    margin: 22px 0;
+}
+
+
+/* DESCRIPTION */
+
+.bashi-overlay small {
+    color: rgba(255, 255, 255, 0.9);
+
+    font-family: var(--body-font);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 300;
+}
+
+
+/* ELEGANT FRAME */
+
+.bashi-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 18px;
+
+    border: 1px solid rgba(216, 195, 154, 0.7);
+
+    border-radius: 12px;
+
+    pointer-events: none;
+}
+/* =========================================================
+   BASHI IMAGE — RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .bashi-image {
+
+       height: 500px;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bashi-image {
+
+        height: 400px;
+    }
+
+    .bashi-image::after {
+
+        inset: 12px;
+    }
+
+}
+/* =========================================================
+   HÉRITAGE FAMILIAL
+========================================================= */
+
+.family-heritage {
+
+    position: relative;
+
+    max-width: 1100px;
+
+    min-height: 500px;
+
+    margin: 120px auto 0;
+
+    padding: 100px 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-large);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(74, 51, 41, 0.96),
+            rgba(45, 33, 28, 0.98)
+        );
+
+    box-shadow: var(--shadow-soft);
+
+}
+
+
+/* GOLD FRAME */
+
+.family-heritage::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 22px;
+
+    border: 1px solid rgba(216, 195, 154, 0.55);
+
+    border-radius: 20px;
+
+    pointer-events: none;
+
+}
+
+
+/* DECORATIVE TOP MARK */
+
+.family-heritage::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 42px;
+
+    color: var(--light-gold);
+
+    font-size: 1.2rem;
+
+}
+
+
+/* NUMBER */
+
+.family-heritage .origin-number {
+
+    color: var(--light-gold);
+
+    font-family: var(--heading-font);
+
+    font-size: 1rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* LABEL */
+
+.family-heritage .origin-label {
+
+    color: var(--light-gold);
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* TITLE */
+
+.family-heritage h3 {
+
+    max-width: 800px;
+
+    color: var(--white);
+
+    font-size: clamp(2.8rem, 5vw, 5rem);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+
+}
+
+
+.family-heritage h3 span {
+
+    display: block;
+
+    color: var(--soft-rose);
+
+    font-style: italic;
+
+}
+
+
+/* DESCRIPTION */
+
+.family-heritage > p:last-child {
+
+    max-width: 650px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 0.9rem;
+
+    font-weight: 300;
+
+    line-height: 2;
+
+}
+/* =========================================================
+   MODE DE VIE
+========================================================= */
+
+.life {
+
+    position: relative;
+
+    padding: 150px 7%;
+
+    background: var(--cream);
+
+    overflow: hidden;
+    padding-top: 70px !important;
+
+}
+
+
+/* =========================================================
+   LIFE INTRO
+========================================================= */
+
+.life-intro {
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* SMALL LABEL */
+
+.life-intro .section-label {
+
+    margin-bottom: 20px;
+
+}
+
+
+/* MAIN TITLE */
+
+.life-intro h2 {
+
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+
+}
+
+
+.life-intro h2 span {
+
+    display: block;
+
+    color: var(--rose);
+
+    font-style: italic;
+
+}
+
+
+/* =========================================================
+   LIFE DESCRIPTION
+========================================================= */
+
+.life-description {
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: var(--soft-brown);
+
+    font-size: 0.95rem;
+
+    font-weight: 400;
+
+    line-height: 2.1;
+
+}
+
+
+/* =========================================================
+   DECORATIVE DETAILS
+========================================================= */
+
+.life-intro::before {
+
+    content: "✦";
+
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: var(--gold);
+
+    font-size: 1.2rem;
+
+}
+
+
+.life-intro::after {
+
+    content: "";
+
+    display: block;
+
+    width: 65px;
+
+    height: 1px;
+
+    margin: 45px auto 0;
+
+    background: var(--light-gold);
+
+}
+/* =========================================================
+   HIDE GALLERY PHOTOS UNTIL BUTTON IS CLICKED
+========================================================= */
+
+.gallery-grid[hidden] {
+    display: none !important;
+}
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact {
+
+    position: relative;
+
+    padding: 150px 7%;
+
+    background: var(--dark-brown);
+
+    color: var(--white);
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   CONTACT INTRO
+========================================================= */
+
+.contact-content {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+.contact-content > .section-label {
+
+    color: var(--light-gold);
+
+    text-align: center;
+
+}
+
+
+.contact-content > h2 {
+
+    color: var(--white);
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-description {
+
+    max-width: 650px;
+
+    margin: 0 auto 70px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   PARENTS CONTACT
+========================================================= */
+
+.contact-parents {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.contact-parent {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(216, 195, 154, 0.25);
+
+    border-radius: var(--radius-medium);
+
+    backdrop-filter: blur(10px);
+
+    transition: var(--transition);
+
+}
+
+
+.contact-parent:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(216, 195, 154, 0.55);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================================================
+   PARENT IMAGE
+========================================================= */
+
+.contact-parent-image {
+
+    width: 115px;
+
+    height: 145px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 60px 60px 18px 18px;
+
+    border: 1px solid rgba(216, 195, 154, 0.55);
+
+}
+
+
+.contact-parent-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+
+}
+
+
+.contact-parent:hover .contact-parent-image img {
+
+    transform: scale(1.06);
+
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+.contact-parent-info {
+
+    flex: 1;
+
+}
+
+
+.contact-role {
+
+    color: var(--light-gold);
+
+    font-size: 0.65rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-parent-info h3 {
+
+    color: var(--white);
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-number {
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 0.8rem;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
+}
+
+.bukavu-section {
+    margin-bottom: 100px;
+}
+
+/* =========================================================
+   CONTACT BUTTONS
+========================================================= */
+
+.contact-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.contact-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    border: 1px solid rgba(216, 195, 154, 0.35);
+
+    border-radius: 50px;
+
+    color: var(--white);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    font-size: 0.65rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: var(--transition);
+
+}
+
+
+.contact-button:hover {
+
+    background: var(--light-gold);
+
+    color: var(--dark-brown);
+
+    border-color: var(--light-gold);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   DECORATIVE ELEMENT
+========================================================= */
+
+.contact-content::after {
+
+    content: "✦";
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 75px;
+
+    color: var(--light-gold);
+
+    font-size: 1.2rem;
+
+}
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 28px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 10;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+
+    color: var(--white);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.nav-links a {
+
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 0.68rem;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: var(--transition);
+
+}
+
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 1px;
+
+    background: var(--light-gold);
+
+    transition: width 0.3s ease;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--white);
+
+}
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+.menu-btn {
+
+    display: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    border-radius: 50%;
+
+    width: 45px;
+
+    height: 45px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(8px);
+
+    color: var(--white);
+
+    font-size: 1.2rem;
+
+    transition: var(--transition);
+
+}
+
+
+.menu-btn:hover {
+
+    background: var(--white);
+
+    color: var(--dark-brown);
+
+}
+.children-section {
+    margin-bottom: 10px;
+}
+
+.family {
+    padding-bottom: 50px;
+
+}
+
+/* =========================================================
+   GOLD ORNAMENTAL FRAME — ACCUEIL
+========================================================= */
+
+.hero {
+    border: 1px solid rgba(216, 195, 154, 0.45);
+}
+
+/* Inner frame */
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 25px;
+
+    border: 1px solid rgba(216, 195, 154, 0.35);
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+/* Top-left ornament */
+.hero::after {
+    content: "❦";
+
+    position: absolute;
+
+    top: 42px;
+    left: 42px;
+
+    color: var(--light-gold);
+
+    font-size: 2.8rem;
+
+    opacity: 0.8;
+
+    transform: rotate(-25deg);
+
+    pointer-events: none;
+
+    z-index: 3;
+}
+
+/* Extra ornaments */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content::before {
+    content: "❦";
+
+    position: absolute;
+
+    top: -20px;
+    right: -20px;
+
+    color: var(--light-gold);
+
+    font-size: 2.5rem;
+
+    opacity: 0.75;
+
+    transform: rotate(25deg);
+
+    pointer-events: none;
+}
+
+.hero-content::after {
+    content: "────────  ✦  ────────";
+
+    position: absolute;
+
+    bottom: -75px;
+    left: 0;
+
+    color: var(--light-gold);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.1rem;
+
+    letter-spacing: 3px;
+
+    opacity: 0.65;
+
+    pointer-events: none;
+}
+.origin-introduction .origin-label {
+    display: inline-block;
+
+    color: var(--brown) !important;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 22px;
+
+    border-bottom: 1px solid var(--light-gold);
+
+    position: relative;
+}
+
+.origin-introduction .origin-label::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: -22px;
+
+    bottom: -7px;
+
+    color: var(--gold);
+
+    font-size: 0.7rem;
+}
+.origins-intro h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+/* =========================
+   BIRTHDAY MODAL
+========================= */
+
+.birthday-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(45, 30, 20, 0.65);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    z-index: 99999;
+}
+
+.birthday-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.birthday-modal-content {
+    position: relative;
+
+    width: min(420px, 90%);
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: #f7efe5;
+
+    border: 1px solid #b08a57;
+
+    border-radius: 8px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    transform: translateY(20px);
+
+    transition: transform 0.3s ease;
+}
+
+.birthday-modal.active .birthday-modal-content {
+    transform: translateY(0);
+}
+
+.birthday-close {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 30px;
+
+    color: #5b3a29;
+
+    cursor: pointer;
+}
+
+.birthday-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.birthday-modal-label {
+    color: #9a7447;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+.birthday-modal-content h2 {
+    color: #5b3a29;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    margin: 10px 0 25px;
+}
+
+.birthday-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#birthdayDay {
+    color: #9a7447;
+
+    font-family: Georgia, serif;
+
+    font-size: 58px;
+
+    line-height: 1;
+}
+
+#birthdayMonth {
+    margin-top: 8px;
+
+    color: #5b3a29;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+}
+
+.birthday-message {
+    color: #765b48;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   GOLD FRAME — ENTIRE WEBSITE
+========================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 10px;
+    border: 1px solid rgba(183, 154, 103, 0.75);
+    pointer-events: none;
+    z-index: 99999;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 16px;
+    border: 1px solid rgba(183, 154, 103, 0.28);
+    pointer-events: none;
+    z-index: 99999;
+}
+h2,
+h3 {
+    color: var(--soft-rose);
+}
+p.origin-label[data-translate="ourRoots"] {
+    color: #b79a67 !important;
+}
+.family-intro .section-intro {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* =========================================================
+   LANGUAGE SELECTOR
+========================================================= */
+
+.language-selector {
+    position: relative;
+    margin-left: 20px;
+    z-index: 1000;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    background: rgba(45, 33, 28, 0.35);
+
+    border: 1px solid rgba(216, 195, 154, 0.65);
+
+    border-radius: 50px;
+
+    color: var(--light-gold);
+
+    font-family: var(--body-font);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+
+    transition: var(--transition);
+}
+
+.language-button:hover {
+    background: rgba(45, 33, 28, 0.65);
+    border-color: var(--gold);
+}
+
+.language-button span {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.language-selector.active .language-button span {
+    transform: rotate(180deg);
+}
+
+.language-menu {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    min-width: 180px;
+
+    padding: 8px;
+
+    background: rgba(45, 33, 28, 0.97);
+
+    border: 1px solid rgba(216, 195, 154, 0.45);
+
+    border-radius: 14px;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(12px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+}
+
+.language-selector.active .language-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-menu button {
+    width: 100%;
+
+    display: block;
+
+    padding: 12px 14px;
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: 8px;
+
+    color: #f7efe5;
+
+    text-align: left;
+
+    font-family: var(--body-font);
+    font-size: 0.72rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.language-menu button:hover {
+    background: rgba(216, 195, 154, 0.12);
+    color: var(--light-gold);
+    transform: translateX(3px);
+}
+
+/* =====================================================
+   GOOGLE TRANSLATE — HIDE GOOGLE UI
+===================================================== */
+
+/* Hide Google's original selector */
+#google_translate_element {
+    display: none !important;
+}
+
+/* Hide Google translation toolbar */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Prevent Google from pushing the page down */
+body {
+    top: 0 !important;
+}
+
+/* Hide Google's logo and text */
+.goog-logo-link,
+.goog-te-gadget,
+.goog-te-gadget span {
+    display: none !important;
+}
+
+/* Hide Google feedback / popup UI */
+.goog-te-ftab,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-text-highlight {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Keep translated page normal */
+iframe.goog-te-banner-frame {
+    display: none !important;
+}
+
+
+
